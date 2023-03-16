@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- contex schema-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<bean id="swift" class="org.tnsif.literals.SwiftEngine">
+<!--property name="company" value="Maruti Suzuki"/>
+<property name="cost" value="450000"/-->
+<constructor-arg name="company" value="Tata"/>
+<constructor-arg name="cost" value="467800"/>
+</bean>
+
+<bean id="Renault" class="org.tnsif.literals.SwiftEngine">
+<!--property name="company" value="Renault"/>
+<property name="cost" value="350000"/-->
+<constructor-arg name="company" value="Renault"/>
+<constructor-arg name="cost" value="679800"/>
+</bean>
+
+
+</beans>
